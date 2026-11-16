@@ -5,6 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Johannes Hernehult - CV</title>
         <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="assets/fonts/inter-display/index.css" />
+        <link rel="stylesheet" href="assets/fonts/jetbrains-mono/index.css" />
+        <link rel="stylesheet" href="assets/fonts/space-grotesk/index.css" />
         <link rel="stylesheet" href="style.css" />
     </head>
     <body>
@@ -13,20 +16,18 @@
             <div class="content">
                 <div class="title">
                     <h1>Johannes Hernehult</h1>
-                    <p class="title">Software Developer</p>
+                    <p class="title">Frontend Developer</p>
                 </div>
 
                 <div class="profile">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    Corporis, vitae repellendus. Assumenda, architecto expedita
-                    qui omnis vel molestias. Corrupti enim sequi nulla dicta,
-                    quisquam qui eligendi expedita vel doloribus magnam tenetur
-                    reprehenderit recusandae, nobis laboriosam ipsum earum fuga.
-                    Iure, ratione.
+                    Frontend developer with 3+ years of experience managing the
+                    full development lifecycle for 20+ client sites. Specialized
+                    in custom WordPress and modern TypeScript development.
                 </div>
 
                 <div class="contact">
                     <p class="location">Malmö, Sweden</p>
+                    <p class="phone">+46 76 225 32 46</p>
                     <p class="email">jhernehult@gmail.com</p>
                     <ul class="links">
                         <li>
@@ -59,11 +60,11 @@
 
                 <div class="skills">
                     <ul>
-                        <li>Skill 1</li>
-                        <li>Skill 1</li>
-                        <li>Skill 1</li>
-                        <li>Skill 1</li>
-                        <li>Skill 1</li>
+                        <li>HTML, CSS/SCSS</li>
+                        <li>TypeScript</li>
+                        <li>SvelteKit, React</li>
+                        <li>PHP, WordPress</li>
+                        <li>Node.js / Deno, SQLite</li>
                     </ul>
                 </div>
             </div>
@@ -72,50 +73,102 @@
             <div class="about">
                 <h2>About Me</h2>
                 <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                    Amet iusto totam explicabo, molestias, laboriosam vero fuga
-                    non adipisci doloremque nam minus recusandae dignissimos
-                    ipsum incidunt! Nobis iusto fuga quo veritatis?
+                    I'm transitioning from agency work to a SaaS environment to
+                    contribute to long-term product development. Outside of
+                    client work I build full-stack personal projects with
+                    SvelteKit and React, and do 3D modeling and rendering in
+                    Blender.
                 </p>
             </div>
             <div class="experience">
                 <div class="card">
-                    <h3>Experience</h3>
-                    <p class="info">
-                        <span class="type">Work</span>
-                        <span>Dexera Creative Agency</span>
-                        <span>2026 - 2028</span>
-                    </p>
+                    <h3>Experience <span class="card__type">School</span></h3>
+                    <p class="card_info">Fullstack .NET Developer, Lexicon</p>
+                    <p class="card__date">Oct 2026 - Jul 2027</p>
                     <ul>
-                        <li>Main accomplishemnt</li>
-                        <li>Another accomplishment</li>
-                        <li>and a third one</li>
+                        <li>
+                            Full-stack C# .NET: ASP.NET Core Web API and MVC
+                            (incl. Identity), Entity Framework, React
+                        </li>
+                        <li>
+                            Weekly individual and group projects, plus a final
+                            project
+                        </li>
+                        <li>
+                            Microsoft Azure Fundamentals (AZ-900) and AI with
+                            Python
+                        </li>
+                        <li>14-week internship (Apr - Jul 2027)</li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>Experience</h3>
-                    <p class="info">
-                        <span class="type">School</span>
-                        <span>Medieinstitutet, Malmö</span>
-                        <span>2020 - 2022</span>
-                    </p>
+                    <h3>Experience <span class="card__type">Work</span></h3>
+                    <p class="card__info">Web Developer, Dexera Creative Agency</span></p>
+                    <p class="card__date">Jul 2021 - Dec 2024</p>
                     <ul>
-                        <li>Main accomplishemnt</li>
-                        <li>Another accomplishment</li>
-                        <li>and a third one</li>
+                        <li>
+                            Managed full development lifecycle and maintenance
+                            for 20+ client sites
+                        </li>
+                        <li>
+                            Developed tools for clients, including an ISP order
+                            form saving ~8 manual hours/month
+                        </li>
+                        <li>
+                            Built custom corporate and e-commerce themes from
+                            design files
+                        </li>
+                        <li>
+                            Improved Core Web Vitals scores and WCAG compliance
+                            across sites
+                        </li>
+                        <li>
+                            Had client communication throughout a project's
+                            lifecycle, from requirements gathering to delivery
+                        </li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>Experience</h3>
-                    <p class="info">
-                        <span class="type">Project</span>
-                        <a href="#">Link to live app</a>
-                        <span>2026</span>
+                    <h3>Experience <span class="card__type">School</span></h3>
+                    <p class="card__info">Frontend Development, Medieinstitutet</p>
+                    <p class="card__date">Sep 2020 - May 2022</p>
+                    <ul>
+                        <li>
+                            HTML, CSS, JavaScript, React; UX and usability
+                            principles
+                        </li>
+                        <li>
+                            Agile workflows (Git, standups, project sprints)
+                        </li>
+                        <li>
+                            Backend fundamentals: Node.js, Firebase, REST API
+                            design
+                        </li>
+                        <li>Design tooling: Figma, Adobe XD</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Experience <span class="card__type">Project</span></h3>
+                    <p class="card__info">
+                        <a href="https://cyb.jhernehult.com/" target="_blank">Count Your Bites</a>
                     </p>
                     <ul>
-                        <li>Main accomplishemnt</li>
-                        <li>Another accomplishment</li>
-                        <li>and a third one</li>
+                        <li>
+                            Better Auth authentication, SQLite with Drizzle ORM,
+                            password reset and email verification
+                        </li>
+                        <li>
+                            Server-side form validation, rate limiting, database
+                            migrations, user-scoped CRUD operations
+                        </li>
+                        <li>
+                            Svelte 5 and SvelteKit form actions with reactive
+                            daily and weekly nutrition summaries
+                        </li>
+                        <li>
+                            Configurable calorie and macronutrient targets,
+                            responsive onboarding/settings interfaces
+                        </li>
                     </ul>
                 </div>
             </div>
