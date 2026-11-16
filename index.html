@@ -4,28 +4,122 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Johannes Hernehult - CV</title>
+        <link rel="stylesheet" href="reset.css" />
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <aside>
-            <img src="#" alt="Profile image" />
-            <section class="title">
-                <h1>Johannes Hernehult</h1>
-                <p class="title">Software Developer</p>
-            </section>
-            <section class="contact">
-                <p class="email"></p>
-                <p class="linkedin"></p>
-                <p class="git"></p>
-                <p class="git-2"></p>
-                <p class="location"></p>
-            </section>
-            <section class="skills"></section>
-        </aside>
         <header>
-            <section class="about"></section>
-            <section class="experience"></section>
+            <img src="#" alt="Profile image" />
+            <div class="content">
+                <div class="title">
+                    <h1>Johannes Hernehult</h1>
+                    <p class="title">Software Developer</p>
+                </div>
+
+                <div class="profile">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Corporis, vitae repellendus. Assumenda, architecto expedita
+                    qui omnis vel molestias. Corrupti enim sequi nulla dicta,
+                    quisquam qui eligendi expedita vel doloribus magnam tenetur
+                    reprehenderit recusandae, nobis laboriosam ipsum earum fuga.
+                    Iure, ratione.
+                </div>
+
+                <div class="contact">
+                    <p class="location">Malmö, Sweden</p>
+                    <p class="email">jhernehult@gmail.com</p>
+                    <ul class="links">
+                        <li>
+                            <a
+                                class="linkedin"
+                                href="https://www.linkedin.com/in/johannes-hernehult/"
+                                target="_blank"
+                            >
+                                Linkedin
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                class="git"
+                                href="https://github.com/johannes-hernehult?tab=repositories"
+                                target="_blank"
+                                >Github</a
+                            >
+                        </li>
+                        <li>
+                            <a
+                                class="git-2"
+                                href="https://git.jhernehult.com/johannes-hernehult?tab=repositories"
+                                target="_blank"
+                                >Self-hosted Git repos</a
+                            >
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills">
+                    <ul>
+                        <li>Skill 1</li>
+                        <li>Skill 1</li>
+                        <li>Skill 1</li>
+                        <li>Skill 1</li>
+                        <li>Skill 1</li>
+                    </ul>
+                </div>
+            </div>
         </header>
-        <main></main>
+        <main>
+            <div class="about">
+                <h2>About Me</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Amet iusto totam explicabo, molestias, laboriosam vero fuga
+                    non adipisci doloremque nam minus recusandae dignissimos
+                    ipsum incidunt! Nobis iusto fuga quo veritatis?
+                </p>
+            </div>
+            <div class="experience">
+                <div class="card">
+                    <h3>Experience</h3>
+                    <p class="info">
+                        <span class="type">Work</span>
+                        <span>Dexera Creative Agency</span>
+                        <span>2026 - 2028</span>
+                    </p>
+                    <ul>
+                        <li>Main accomplishemnt</li>
+                        <li>Another accomplishment</li>
+                        <li>and a third one</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Experience</h3>
+                    <p class="info">
+                        <span class="type">School</span>
+                        <span>Medieinstitutet, Malmö</span>
+                        <span>2020 - 2022</span>
+                    </p>
+                    <ul>
+                        <li>Main accomplishemnt</li>
+                        <li>Another accomplishment</li>
+                        <li>and a third one</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>Experience</h3>
+                    <p class="info">
+                        <span class="type">Project</span>
+                        <a href="#">Link to live app</a>
+                        <span>2026</span>
+                    </p>
+                    <ul>
+                        <li>Main accomplishemnt</li>
+                        <li>Another accomplishment</li>
+                        <li>and a third one</li>
+                    </ul>
+                </div>
+            </div>
+        </main>
         <footer>&copy; <span id="year"></span> Johannes Hernehult</footer>
         <script>
             document.getElementById("year").textContent =
