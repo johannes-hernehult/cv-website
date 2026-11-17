@@ -83,7 +83,7 @@
 
     .contact.card {
         padding: 2mm;
-        border: 0;
+        border: 1px solid #ddd;
         background: transparent !important;
     }
 
