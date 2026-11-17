@@ -109,8 +109,7 @@ h4::after {
     height: 2px;
     background: linear-gradient(
         to right,
-        var(--color-accent-light) 50%,
-        var(--color-accent) 85%,
+        var(--color-accent-light) 10%,
         var(--color-accent-dark) 100%
     );
 }
@@ -141,8 +140,7 @@ button {
     height: 3px;
     background: linear-gradient(
         to right,
-        var(--color-accent-light) 50%,
-        var(--color-accent) 85%,
+        var(--color-accent-light) 10%,
         var(--color-accent-dark) 100%
     );
 }
