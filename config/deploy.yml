@@ -16,7 +16,7 @@ ssh:
 proxy:
   ssl: true
   host: cv.jhernehult.com
-  app_port: 80
+  app_port: 8080
   healthcheck:
     path: /up
 
