@@ -1,0 +1,25 @@
+# Must differ from count-your-bites and Forgejo
+service: cv-website
+image: cv-website
+
+servers:
+  web:
+    hosts:
+      - 62.238.34.82
+
+ssh:
+  user: jh
+  port: 1995
+
+proxy:
+  ssl: true
+  host: cv.jhernehult.com
+  app_port: 80
+  healthcheck:
+    path: /up
+
+registry:
+  server: localhost:5555
+
+builder:
+  arch: amd64

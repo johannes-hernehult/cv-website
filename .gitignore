@@ -1,0 +1,19 @@
+# Kamal secrets (never commit)
+.kamal/secrets
+.kamal/secrets.*
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Logs
+*.log
