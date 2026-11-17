@@ -15,9 +15,9 @@ function createLink(href, text) {
 }
 
 function showContactDetails() {
-    const locationEl = document.querySelector(".location");
-    const phoneEl = document.querySelector(".phone");
-    const emailEl = document.querySelector(".email");
+    const locationEl = document.querySelector(".location .contact-info__value");
+    const phoneEl = document.querySelector(".phone .contact-info__value");
+    const emailEl = document.querySelector(".email .contact-info__value");
     if (!locationEl || !phoneEl || !emailEl) return;
 
     locationEl.textContent = contact.location;

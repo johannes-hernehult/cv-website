@@ -1,8 +1,8 @@
 :root {
     /* Colors */
     --color-background: oklch(14.5% 0 none);
-    --color-surface: oklch(20.5% 0 none);
-    --color-header: var(--color-surface);
+    --color-header: oklch(20.5% 0 none);
+    --color-surface:  oklch(26.9% 0 none);
     --color-text: oklch(97% 0 none);
     --color-text-muted: oklch(70.8% 0 none);
     --color-accent-light: oklch(82.8% 0.189 84.429);
@@ -20,7 +20,7 @@
     --font-mono: monospace;
     --font-size-name: 3rem;
     --font-size-role: 1.75rem;
-    --font-size-label: 0.75rem;
+    --font-size-label: 0.8rem;
     --line-height-body: 1.6;
     --line-height-heading: 1;
     --line-height-section-heading: 1.2;

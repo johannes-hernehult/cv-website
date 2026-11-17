@@ -1,46 +1,43 @@
-.hero {
-    position: relative;
+.contact {
+    background-color: var(--color-background) !important;
 }
 
-.hero::after {
-    position: absolute;
-    inset-block-end: 0;
-    inset-inline: 0;
-    width: 100%;
-    height: var(--border-width-hero);
-    background: var(--gradient-accent);
-    content: "";
+.contact h2 {
+    margin-block-end: var(--space-xsmall);
+    padding-block-end: 0;
+    font-size: 1.17em;
+    line-height: 1;
 }
 
-.hero img {
-    max-height: 300px;
-    width: 100%;
-    object-fit: cover;
-    object-position: 50% 15%;
-}
-
-.intro {
-    color: var(--color-text);
-    line-height: var(--line-height-heading);
-}
-
-.intro__name {
-    font-size: var(--font-size-name);
-}
-
-.intro__role {
-    color: var(--color-text-muted);
-    font-size: var(--font-size-role);
+.contact h2::after {
+    content: none;
 }
 
 .contact-info {
-    min-height: 1lh;
+    display: grid;
+    grid-template-columns: 5rem minmax(0, 1fr);
+    align-items: baseline;
+    gap: var(--space-xsmall);
+    padding-block: var(--space-2xsmall);
 }
 
-.contact-info:empty::before {
+.contact-info__label {
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-label);
+    line-height: var(--line-height-label);
+}
+
+.contact-info__value {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.contact-info__value:empty::before {
     display: block;
+    width: 13ch;
     height: 1em;
-    margin-block: 0.3em; /* 1em + 0.6em = 1.6em, matching --line-height-body */
+    margin-block: 0.3em;
     border-radius: var(--space-2xsmall);
     background: var(--color-text-muted);
     opacity: 0.2;
@@ -48,15 +45,11 @@
     animation: contact-pulse 1.2s ease-in-out infinite;
 }
 
-.location:empty::before {
-    width: 13ch;
-}
-
-.phone:empty::before {
+.phone .contact-info__value:empty::before {
     width: 16ch;
 }
 
-.email:empty::before {
+.email .contact-info__value:empty::before {
     width: 21ch;
 }
 
@@ -64,25 +57,45 @@
     animation: contact-fade-in 400ms ease-out;
 }
 
+.contact .links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xsmall);
+    margin-block-start: var(--space-small);
+    padding: 0;
+    list-style: none;
+}
+
+.contact .links li {
+    /* Overrides .card li + li in cards.css so horizontal pills stay aligned */
+    margin-block-start: 0;
+}
+
+.contact .links a {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-label-block) var(--space-xsmall);
+    border: var(--border-width) solid var(--color-border-muted);
+    border-radius: var(--radius-pill);
+    background-color: var(--color-surface);
+    color: var(--color-text);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-label);
+    line-height: var(--line-height-label);
+    text-decoration: none;
+    transition:
+        border-color 160ms ease,
+        background-color 160ms ease,
+        color 160ms ease;
+}
+
+.contact .links a:hover,
+.contact .links a:focus-visible {
+    border-color: var(--color-accent-light);
+    color: var(--color-accent-light);
+}
+
 .contact-fallback {
+    padding-block: var(--space-xsmall);
     color: var(--color-text-muted);
-}
-
-@keyframes contact-pulse {
-    50% {
-        opacity: 0.4;
-    }
-}
-
-@keyframes contact-fade-in {
-    from {
-        opacity: 0;
-    }
-}
-
-@media (prefers-reduced-motion: reduce) {
-    .contact-info:empty::before,
-    .contact-info.is-visible {
-        animation: none;
-    }
 }
