@@ -17,7 +17,7 @@
     /* Typography */
     --font-body: "Inter Display", sans-serif;
     --font-heading: "Space Grotesk", sans-serif;
-    --font-mono: "JetBrains Mono", monospace;
+    --font-mono: monospace;
     --font-size-name: 3rem;
     --font-size-role: 1.75rem;
     --font-size-label: 0.75rem;
