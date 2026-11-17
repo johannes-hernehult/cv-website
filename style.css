@@ -253,7 +253,7 @@ footer {
 
 .keyword {
     position: relative;
-    display: inline-block;
+    display: inline;
     color: var(--color-accent-light);
 }
 
