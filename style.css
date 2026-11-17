@@ -5,10 +5,11 @@
     --color-card: oklch(37.1% 0 none);
     --color-text-muted: oklch(70.8% 0 none);
     --color-text: oklch(97% 0 none);
+    --color-accent-light: oklch(82.8% 0.189 84.429);
     --color-accent: oklch(76.9% 0.188 70.08);
     --color-accent-dark: oklch(66.6% 0.179 58.318);
-    --color-interactive: oklch(70.4% 0.14 182.503);
-    --color-interactive-hover: oklch(77.7% 0.152 181.912);
+    --color-interactive: oklch(77.7% 0.152 181.912);
+    --color-interactive-hover: oklch(70.4% 0.14 182.503);
 
     --font-body: "Inter Display";
     --font-heading: "Space Grotesk";
@@ -99,6 +100,7 @@ h4 {
 h2::after,
 h3::after,
 h4::after {
+    opacity: 0.8;
     content: "";
     position: absolute;
     bottom: 0;
@@ -107,7 +109,8 @@ h4::after {
     height: 2px;
     background: linear-gradient(
         to right,
-        var(--color-accent) 45%,
+        var(--color-accent-light) 50%,
+        var(--color-accent) 85%,
         var(--color-accent-dark) 100%
     );
 }
@@ -138,7 +141,8 @@ button {
     height: 3px;
     background: linear-gradient(
         to right,
-        var(--color-accent) 45%,
+        var(--color-accent-light) 50%,
+        var(--color-accent) 85%,
         var(--color-accent-dark) 100%
     );
 }
@@ -165,10 +169,9 @@ button {
     background-color: var(--color-card);
 }
 
-.card h3{
+.card h3 {
     grid-column: span 7;
 }
-
 
 .card__info {
     grid-row: 2 / 3;
@@ -186,4 +189,10 @@ button {
 
 .card ul {
     grid-column: 1 / 8;
+}
+
+.keyword {
+    position: relative;
+    display: inline-block;
+    color: var(--color-accent-light);
 }
