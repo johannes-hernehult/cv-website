@@ -10,6 +10,8 @@ servers:
 ssh:
   user: jh
   port: 1995
+  keys:
+    - ~/.ssh/id_github
 
 proxy:
   ssl: true
