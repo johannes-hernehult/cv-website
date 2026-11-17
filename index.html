@@ -16,18 +16,19 @@
                 <img src="./assets/images/jh.jpg" alt="Profile image" />
                 <div class="intro">
                     <h1 class="intro__name">Johannes Hernehult</h1>
-                    <p class="intro__role">Fullstack Engineer</p>
+                    <p class="intro__role">Fullstack Developer</p>
                 </div>
             </div>
             <div class="content">
-
                 <div class="profile">
-                    Fullstack developer with 3+ years of experience managing the full
-                      development lifecycle for 20+ client sites, specialized in custom
-                      WordPress and modern TypeScript development. I'm transitioning from
-                      agency work to a SaaS environment to contribute to long-term product
-                      development. Outside of client work, I build full-stack projects with
-                      SvelteKit and React, and do 3D modeling and rendering in Blender.     </div>
+                    Fullstack developer with 3+ years building and maintaining
+                    20+ client sites, specializing in custom WordPress and
+                    TypeScript. Currently training in C#/.NET and seeking a
+                    14-week internship (Apr - Jul 2027) at a SaaS company,
+                    moving from agency work to long-term product development.
+                    Side projects in SvelteKit and React; 3D modeling in
+                    Blender.
+                </div>
 
                 <section class="contact">
                     <!-- Make personal info injected by js, to prevent some scraping -->
@@ -42,7 +43,7 @@
                                 href="https://www.linkedin.com/in/johannes-hernehult/"
                                 target="_blank"
                             >
-                                Linkedin
+                                LinkedIn
                             </a>
                         </li>
                         <li>
@@ -50,7 +51,7 @@
                                 class="git"
                                 href="https://github.com/johannes-hernehult?tab=repositories"
                                 target="_blank"
-                                >Github</a
+                                >GitHub</a
                             >
                         </li>
                         <li>
@@ -63,37 +64,84 @@
                         </li>
                     </ul>
                 </section>
-
-                <section class="skills">
-                    <h2>Skills</h2>
-                    <ul>
-                        <li>HTML, CSS</li>
-                        <li>JavaScript/TypeScript</li>
-                        <li>SvelteKit, React</li>
-                        <li>PHP, C#, WordPress</li>
-                        <li>Node.js, SQLite</li>
-                    </ul>
-                </>
             </div>
         </header>
         <main>
+            <section class="skills">
+                <h2>Skills</h2>
+                <ul class="skills__list">
+                    <li class="card">
+                        <h3 class="skills__label">Frontend</h3>
+                        <div class="skills__tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>TypeScript</span>
+                            <span>TypeScript</span>
+                            <span>React</span>
+                            <span>SvelteKit</span>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3 class="skills__label">Backend</h3>
+                        <div class="skills__tags">
+                            <span>Node.js</span>
+                            <span>PHP</span>
+                            <span>WordPress</span>
+                            <span>SQLite</span>
+                            <span>REST APIs</span>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3 class="skills__label">Tools</h3>
+                        <div class="skills__tags">
+                            <span>Git</span>
+                            <span>Figma</span>
+                            <span>Blender</span>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3 class="skills__label">Learning</h3>
+                        <div class="skills__tags">
+                            <span>C#</span>
+                            <span>ASP.NET Core</span>
+                            <span>Entity Framework</span>
+                            <span>Azure</span>
+                        </div>
+                    </li>
+                    <li class="card">
+                        <h3 class="skills__label">Languages</h3>
+                        <div class="skills__tags">
+                            <span>English</span>
+                            <span>Swedish</span>
+                            <span>Norwegian (native)</span>
+                        </div>
+                    </li>
+                </ul>
+            </section>
             <section class="experience">
-                <h2>Experiences</h2>
-                <!--Add Filtering here, chronoligical and by type-->
+                <h2>Experience</h2>
+                <!--Add Filtering here, chronological and by type-->
                 <div class="card">
-                    <h3>Fullstack .NET Developer <span class="card__type">Education</span></h3>
-                    <p class="card__info">Lexicon - Oct 2026 - Jul 2027</p>
+                    <h3>
+                        Fullstack .NET Developer
+                        <span class="card__type">Education</span>
+                    </h3>
+                    <p class="card__info">Lexicon (2026 - 2027)</p>
                     <ul>
                         <li>
-                            Full-stack <span class="keyword">C# .NET</span>: <span class="keyword">ASP.NET Core Web API</span> and <span class="keyword">MVC</span>
-                            (incl. <span class="keyword">Identity</span>), <span class="keyword">Entity Framework</span>, <span class="keyword">React</span>
+                            <span class="keyword">C# .NET</span>:
+                            <span class="keyword">ASP.NET Core</span> (Web API,
+                            MVC, Identity),
+                            <span class="keyword">Entity Framework</span>,
+                            <span class="keyword">React</span>
                         </li>
                         <li>
-                            Weekly individual and group projects, plus a final
-                            project
+                            Weekly solo and group projects, plus a final project
                         </li>
                         <li>
-                            Microsoft <span class="keyword">Azure</span> Fundamentals (<span class="keyword">AZ-900</span>) and <span class="keyword">AI</span> with
+                            <span class="keyword">Azure</span> Fundamentals
+                            (<span class="keyword">AZ-900</span>);
+                            <span class="keyword">AI</span> with
                             <span class="keyword">Python</span>
                         </li>
                         <li>14-week internship (Apr - Jul 2027)</li>
@@ -101,71 +149,86 @@
                 </div>
                 <div class="card">
                     <h3>
-                        <a href="https://cyb.jhernehult.com/" target="_blank">Count Your Bites</a>
+                        <a href="https://cyb.jhernehult.com/" target="_blank"
+                            >Count Your Bites</a
+                        >
                         <span class="card__type">Project</span>
-
                     </h3>
                     <p class="card__info">2026</p>
                     <ul>
                         <li>
-                            <span class="keyword">Better Auth</span> authentication, <span class="keyword">SQLite</span> with <span class="keyword">Drizzle ORM</span>,
-                            password reset and email verification
+                            Calorie and macro tracker with daily/weekly
+                            summaries and configurable targets
                         </li>
                         <li>
-                            Server-side form validation, rate limiting, database
-                            migrations, user-scoped CRUD operations
+                            <span class="keyword">Better Auth</span>
+                            authentication with email verification and password
+                            reset
                         </li>
                         <li>
-                            <span class="keyword">Svelte 5</span> and <span class="keyword">SvelteKit</span> form actions with reactive
-                            daily and weekly nutrition summaries
-                        </li>
-                        <li>
-                            Configurable calorie and macronutrient targets,
-                            responsive onboarding/settings interfaces
+                            <span class="keyword">Svelte 5</span>/<span
+                                class="keyword"
+                                >SvelteKit</span
+                            >
+                            form actions,
+                            <span class="keyword">SQLite</span> with
+                            <span class="keyword">Drizzle ORM</span>,
+                            server-side validation, rate limiting, migrations
                         </li>
                     </ul>
                 </div>
                 <div class="card">
                     <h3>Web Developer <span class="card__type">Work</span></h3>
-                    <p class="card__info">Dexera Creative Agency - Jul 2021 - Dec 2024</p>
+                    <p class="card__info">
+                        Dexera Creative Agency (2021 - 2024)
+                    </p>
                     <ul>
                         <li>
-                            Managed full development lifecycle and maintenance
-                            for 20+ client sites
+                            Owned the full lifecycle (build, launch,
+                            maintenance) for 20+ client sites
                         </li>
                         <li>
-                            Developed tools for clients, including an ISP order
-                            form saving ~8 manual hours/month
+                            Built a custom client tool that saved ~8 manual
+                            hours/month
                         </li>
                         <li>
-                            Built custom corporate and e-commerce themes from
-                            design files
+                            Turned design files into custom corporate and
+                            e-commerce themes
                         </li>
                         <li>
-                            Improved <span class="keyword">Core Web Vitals</span> scores and <span class="keyword">WCAG</span> compliance
-                            across sites
+                            Improved
+                            <span class="keyword">Core Web Vitals</span> and
+                            <span class="keyword">WCAG</span> compliance across
+                            sites
                         </li>
                     </ul>
                 </div>
                 <div class="card">
-                    <h3>Frontend Development <span class="card__type">Education</span></h3>
-                    <p class="card__info">Medieinstitutet - Sep 2020 - May 2022</p>
+                    <h3>
+                        Frontend Development
+                        <span class="card__type">Education</span>
+                    </h3>
+                    <p class="card__info">Medieinstitutet (2020 - 2022)</p>
                     <ul>
                         <li>
-                            <span class="keyword">HTML</span>, <span class="keyword">CSS</span>, <span class="keyword">JavaScript</span>, <span class="keyword">React</span>; UX and usability
-                            principles
+                            <span class="keyword">HTML</span>,
+                            <span class="keyword">CSS</span>,
+                            <span class="keyword">JavaScript</span>,
+                            <span class="keyword">React</span>; UX and usability
                         </li>
                         <li>
-                            Agile workflows (<span class="keyword">Git</span>, standups, project sprints)
+                            Agile workflow: <span class="keyword">Git</span>,
+                            standups, sprints
                         </li>
                         <li>
-                            Backend fundamentals: <span class="keyword">Node.js</span>, <span class="keyword">Firebase</span>, <span class="keyword">REST API</span>
-                            design
+                            <span class="keyword">Node.js</span>,
+                            <span class="keyword">Firebase</span>,
+                            <span class="keyword">REST API</span> design;
+                            <span class="keyword">Figma</span>,
+                            <span class="keyword">Adobe XD</span>
                         </li>
-                        <li>Design tooling: <span class="keyword">Figma</span>, <span class="keyword">Adobe XD</span></li>
                     </ul>
                 </div>
-
             </section>
         </main>
         <footer>&copy; <span id="year"></span> Johannes Hernehult</footer>
