@@ -10,6 +10,14 @@
         <link rel="stylesheet" href="assets/fonts/space-grotesk/index.css" />
         <link rel="stylesheet" href="style.css" />
         <script src="experience.js" defer></script>
+        <script src="anti-scraper.js" defer></script>
+        <noscript>
+            <style>
+                .contact-info {
+                    display: none;
+                }
+            </style>
+        </noscript>
     </head>
     <body>
         <header>
@@ -38,17 +46,16 @@
                 </div>
 
                 <section class="contact" aria-labelledby="contact-heading">
-                    <!-- Make personal info injected by js, to prevent some scraping -->
                     <h2 id="contact-heading">Contact</h2>
-                    <p class="location">Malmö, Sweden</p>
-                    <p class="phone">
-                        <a href="tel:+46762253246">+46 76 225 32 46</a>
-                    </p>
-                    <p class="email">
-                        <a href="mailto:jhernehult@gmail.com"
-                            >jhernehult@gmail.com</a
-                        >
-                    </p>
+                    <p class="location contact-info"></p>
+                    <p class="phone contact-info"></p>
+                    <p class="email contact-info"></p>
+                    <noscript>
+                        <p class="contact-fallback">
+                            Enable JavaScript in your browser to see my contact
+                            details, or reach me via LinkedIn below.
+                        </p>
+                    </noscript>
                     <ul class="links">
                         <li>
                             <a
@@ -194,11 +201,15 @@
                             >Project</span
                         >
                     </h3>
-                    <p class="card__info">  <a
-                        href="https://cyb.jhernehult.com/"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        >Link to app</a> (2026)</p>
+                    <p class="card__info">
+                        <a
+                            href="https://cyb.jhernehult.com/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            >Link to app</a
+                        >
+                        (2026)
+                    </p>
                     <ul>
                         <li>
                             Built and self-host a fullstack calorie and

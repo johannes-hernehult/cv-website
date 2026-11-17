@@ -210,6 +210,60 @@ footer {
     font-size: var(--font-size-role);
 }
 
+.contact-info {
+    min-height: 1lh;
+}
+
+.contact-info:empty::before {
+    display: block;
+    height: 1em;
+    margin-block: 0.3em; /* 1em + 0.6em = 1.6em, matching --line-height-body */
+    border-radius: var(--space-2xsmall);
+    background: var(--color-text-muted);
+    opacity: 0.2;
+    content: "";
+    animation: contact-pulse 1.2s ease-in-out infinite;
+}
+
+.location:empty::before {
+    width: 13ch;
+}
+
+.phone:empty::before {
+    width: 16ch;
+}
+
+.email:empty::before {
+    width: 21ch;
+}
+
+.contact-info.is-visible {
+    animation: contact-fade-in 400ms ease-out;
+}
+
+.contact-fallback {
+    color: var(--color-text-muted);
+}
+
+@keyframes contact-pulse {
+    50% {
+        opacity: 0.4;
+    }
+}
+
+@keyframes contact-fade-in {
+    from {
+        opacity: 0;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .contact-info:empty::before,
+    .contact-info.is-visible {
+        animation: none;
+    }
+}
+
 /* Experience cards */
 .experience__controls[hidden] {
     display: none;
