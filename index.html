@@ -9,6 +9,7 @@
         <link rel="stylesheet" href="assets/fonts/jetbrains-mono/index.css" />
         <link rel="stylesheet" href="assets/fonts/space-grotesk/index.css" />
         <link rel="stylesheet" href="style.css" />
+        <script src="experience.js" defer></script>
     </head>
     <body>
         <header>
@@ -139,7 +140,16 @@
             </section>
             <section class="experience" aria-labelledby="experience-heading">
                 <h2 id="experience-heading">Experience</h2>
-                <!--Add Filtering here, chronological and by type-->
+                <div class="experience__controls" hidden>
+                    <label>
+                        Order by
+                        <select id="experience-order">
+                            <option value="newest">Year (newest first)</option>
+                            <option value="oldest">Year (oldest first)</option>
+                            <option value="type">Experience type</option>
+                        </select>
+                    </label>
+                </div>
                 <div class="card">
                     <h3>
                         Fullstack .NET Developer
