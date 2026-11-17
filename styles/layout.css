@@ -1,0 +1,45 @@
+header {
+    position: fixed;
+    inset-block: 0;
+    width: var(--sidebar-width);
+    height: var(--viewport-height);
+    overflow-y: auto;
+    border-inline-end: var(--border-width) solid var(--color-border-subtle);
+    background-color: var(--color-header);
+}
+
+header .content,
+main,
+.skills,
+.experience {
+    display: flex;
+    flex-direction: column;
+}
+
+.experience,
+.skills,
+.skills__list {
+    gap: var(--space-small);
+}
+
+header .content,
+.intro {
+    padding: var(--space-medium);
+    gap: var(--space-large);
+}
+
+main {
+    grid-column: 2 / -1;
+    grid-row: 1;
+    max-width: var(--content-max-width);
+    padding: var(--space-large);
+    gap: var(--space-xlarge);
+}
+
+footer {
+    grid-column: 2 / -1;
+    grid-row: 2;
+    align-self: end;
+    padding: var(--space-medium);
+    text-align: center;
+}

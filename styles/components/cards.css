@@ -1,0 +1,70 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xsmall);
+    padding: var(--space-medium);
+    border: var(--border-width) solid var(--color-border-subtle);
+    border-radius: var(--radius-large);
+    background-color: var(--color-surface);
+}
+
+.card h3 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--space-xsmall);
+    padding-block-end: 0;
+    margin-block-end: 0;
+    line-height: 1;
+}
+
+.card h3::after {
+    content: none;
+}
+
+.card__info {
+    line-height: 1;
+    color: var(--color-text-muted);
+}
+
+.card__type {
+    padding: var(--space-label-block) var(--space-xsmall);
+    border: var(--border-width) solid var(--color-border-muted);
+    border-radius: var(--radius-pill);
+    color: var(--color-text-muted);
+    font-family: var(--font-mono);
+    font-size: var(--font-size-label);
+    line-height: var(--line-height-label);
+}
+
+.card__type--education {
+    border-color: oklch(82% 0.13 285 / 35%);
+    background-color: oklch(82% 0.13 285 / 12%);
+    color: var(--color-type-education);
+}
+
+.card__type--project {
+    border-color: oklch(82% 0.13 165 / 35%);
+    background-color: oklch(82% 0.13 165 / 12%);
+    color: var(--color-type-project);
+}
+
+.card__type--work {
+    border-color: oklch(82% 0.13 55 / 35%);
+    background-color: oklch(82% 0.13 55 / 12%);
+    color: var(--color-type-work);
+}
+
+.card ul {
+    margin-top: var(--space-small);
+}
+
+.card li + li {
+    margin-block-start: var(--space-2xsmall);
+}
+
+.keyword {
+    position: relative;
+    display: inline;
+    color: var(--color-accent-light);
+}
