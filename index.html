@@ -12,18 +12,22 @@
     </head>
     <body>
         <header>
-            <img src="#" alt="Profile image" />
-            <div class="content">
-                <div class="title">
-                    <h1>Johannes Hernehult</h1>
-                    <p class="title">Frontend Developer</p>
+            <div class="hero">
+                <img src="./assets/images/jh.jpg" alt="Profile image" />
+                <div class="intro">
+                    <h1 class="intro__name">Johannes Hernehult</h1>
+                    <p class="intro__role">Fullstack Engineer</p>
                 </div>
+            </div>
+            <div class="content">
 
                 <div class="profile">
-                    Frontend developer with 3+ years of experience managing the
-                    full development lifecycle for 20+ client sites. Specialized
-                    in custom WordPress and modern TypeScript development.
-                </div>
+                    Fullstack developer with 3+ years of experience managing the full
+                      development lifecycle for 20+ client sites, specialized in custom
+                      WordPress and modern TypeScript development. I'm transitioning from
+                      agency work to a SaaS environment to contribute to long-term product
+                      development. Outside of client work, I build full-stack projects with
+                      SvelteKit and React, and do 3D modeling and rendering in Blender.     </div>
 
                 <div class="contact">
                     <p class="location">Malmö, Sweden</p>
@@ -70,17 +74,9 @@
             </div>
         </header>
         <main>
-            <div class="about">
-                <h2>About Me</h2>
-                <p>
-                    I'm transitioning from agency work to a SaaS environment to
-                    contribute to long-term product development. Outside of
-                    client work I build full-stack personal projects with
-                    SvelteKit and React, and do 3D modeling and rendering in
-                    Blender.
-                </p>
-            </div>
-            <div class="experience">
+
+            <section class="experience">
+                <h2>Experience</h2>
                 <div class="card">
                     <h3>Experience <span class="card__type">School</span></h3>
                     <p class="card_info">Fullstack .NET Developer, Lexicon</p>
@@ -121,10 +117,6 @@
                         <li>
                             Improved Core Web Vitals scores and WCAG compliance
                             across sites
-                        </li>
-                        <li>
-                            Had client communication throughout a project's
-                            lifecycle, from requirements gathering to delivery
                         </li>
                     </ul>
                 </div>
@@ -171,7 +163,7 @@
                         </li>
                     </ul>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>&copy; <span id="year"></span> Johannes Hernehult</footer>
         <script>
