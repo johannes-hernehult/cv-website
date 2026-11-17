@@ -38,19 +38,25 @@
 }
 
 .card__type--education {
+    border-color: rgba(184, 181, 255, 0.35);
     border-color: oklch(82% 0.13 285 / 35%);
+    background-color: rgba(184, 181, 255, 0.12);
     background-color: oklch(82% 0.13 285 / 12%);
     color: var(--color-type-education);
 }
 
 .card__type--project {
+    border-color: rgba(110, 231, 183, 0.35);
     border-color: oklch(82% 0.13 165 / 35%);
+    background-color: rgba(110, 231, 183, 0.12);
     background-color: oklch(82% 0.13 165 / 12%);
     color: var(--color-type-project);
 }
 
 .card__type--work {
+    border-color: rgba(253, 186, 116, 0.35);
     border-color: oklch(82% 0.13 55 / 35%);
+    background-color: rgba(253, 186, 116, 0.12);
     background-color: oklch(82% 0.13 55 / 12%);
     color: var(--color-type-work);
 }
