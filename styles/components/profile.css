@@ -45,9 +45,6 @@
     animation: contact-pulse 1.2s ease-in-out infinite;
 }
 
-.phone .contact-info__value:empty::before {
-    width: 16ch;
-}
 
 .email .contact-info__value:empty::before {
     width: 21ch;

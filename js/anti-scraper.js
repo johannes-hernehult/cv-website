@@ -3,7 +3,6 @@ const FALLBACK_DELAY_MS = 1000;
 // Assembled at runtime so the full strings never appear in the source
 const contact = {
     location: ["Malmö", "Sweden"].join(", "),
-    phone: ["+46", "76", "225", "32", "46"].join(" "),
     email: ["jhernehult", "gmail.com"].join("@"),
 };
 
@@ -16,12 +15,10 @@ function createLink(href, text) {
 
 function showContactDetails() {
     const locationEl = document.querySelector(".location .contact-info__value");
-    const phoneEl = document.querySelector(".phone .contact-info__value");
     const emailEl = document.querySelector(".email .contact-info__value");
-    if (!locationEl || !phoneEl || !emailEl) return;
+    if (!locationEl || !emailEl) return;
 
     locationEl.textContent = contact.location;
-    phoneEl.append(createLink(`tel:${contact.phone.replaceAll(" ", "")}`, contact.phone));
     emailEl.append(createLink(`mailto:${contact.email}`, contact.email));
 
     document.querySelectorAll(".contact-info").forEach((el) => {
