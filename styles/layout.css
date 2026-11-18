@@ -10,6 +10,7 @@ header {
 
 header .content,
 main,
+.profile,
 .skills,
 .experience {
     display: flex;
@@ -17,6 +18,7 @@ main,
 }
 
 .experience,
+.profile,
 .skills,
 .skills__list {
     gap: var(--space-small);
