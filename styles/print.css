@@ -29,7 +29,7 @@
 
     body {
         display: grid;
-        grid-template-columns: 34% minmax(0, 1fr);
+        grid-template-columns: 30% minmax(0, 1fr);
         grid-template-rows: auto auto;
         min-height: 0;
         font-size: 8.5pt;

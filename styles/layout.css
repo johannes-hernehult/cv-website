@@ -8,6 +8,11 @@ header {
     background-color: var(--color-header);
 }
 
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
 header .content,
 main,
 .profile,
@@ -26,7 +31,7 @@ main,
 
 header .content,
 .intro {
-    padding: var(--space-medium);
+    padding: var(--space-small);
     gap: var(--space-large);
 }
 
