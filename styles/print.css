@@ -102,7 +102,27 @@
     }
 
     .contact .links {
-        display: none !important;
+        display: grid;
+        gap: 1mm;
+        margin-block-start: 1mm;
+    }
+
+    .contact .links a {
+        display: block;
+        padding: 0;
+        border: 0;
+        background: transparent;
+        text-decoration: none;
+    }
+
+    .contact .links a.linkedin::after,
+    .contact .links a.git::after,
+    .contact .links a.git-2::after {
+        display: block;
+        content: attr(href);
+        font-size: 6pt;
+        font-weight: 400;
+        overflow-wrap: anywhere;
     }
 
     main {
