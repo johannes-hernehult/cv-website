@@ -1,4 +1,3 @@
-# Must differ from count-your-bites and Forgejo
 service: cv-website
 image: cv-website
 
