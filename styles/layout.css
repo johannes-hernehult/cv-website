@@ -12,20 +12,27 @@ body {
     margin-left: var(--sidebar-width);
     display: flex;
     flex-direction: column;
-    gap: var(--space-xlarge);
+    gap: var(--space-medium);
 }
 
 main {
-    padding-inline: var(--space-medium);
+    padding: var(--space-medium);
+    padding-top: var(--space-xlarge);
     display: flex;
     flex-direction: column;
-    gap: calc(var(--space-xlarge) * 2);
+    gap: calc(var(--space-xlarge));
 }
 
 footer {
     text-align: center;
     padding-inline: var(--space-medium);
     padding-block: var(--space-xsmall);
+}
+
+.experience {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-medium);
 }
 
 @media screen and (max-width: 750px) {
@@ -54,5 +61,10 @@ footer {
 @media screen and (max-width: 450px) {
     header .hero img {
         flex-basis: 50%;
+    }
+
+    main {
+        gap: calc(var(--space-large));
+        padding-top: var(--space-medium);
     }
 }
