@@ -68,3 +68,9 @@ button:focus-visible {
 button {
     color: var(--color-interactive);
 }
+
+@media screen and (max-width: 450px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+}

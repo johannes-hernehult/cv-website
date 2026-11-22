@@ -9,10 +9,23 @@ header {
 }
 
 body {
-    margin-left: calc(var(--sidebar-width) + 2rem);
+    margin-left: var(--sidebar-width);
     display: flex;
     flex-direction: column;
     gap: var(--space-xlarge);
+}
+
+main {
+    padding-inline: var(--space-medium);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--space-xlarge) * 2);
+}
+
+footer {
+    text-align: center;
+    padding-inline: var(--space-medium);
+    padding-block: var(--space-xsmall);
 }
 
 @media screen and (max-width: 750px) {
@@ -40,6 +53,6 @@ body {
 
 @media screen and (max-width: 450px) {
     header .hero img {
-        flex-basis: 75%;
+        flex-basis: 50%;
     }
 }
