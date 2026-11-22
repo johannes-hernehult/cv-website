@@ -1,52 +1,24 @@
 header {
     position: fixed;
-    inset-block: 0;
-    width: var(--sidebar-width);
-    height: var(--viewport-height);
-    overflow-y: auto;
-    border-inline-end: var(--border-width) solid var(--color-border-subtle);
-    background-color: var(--color-header);
+    left: 0;
+    top: 0;
+    bottom: 0;
+    max-width: var(--sidebar-width);
+
+    background-color: var(--color-surface);
 }
 
-.hero img {
-    width: 100%;
-    height: auto;
+body {
+    margin-left: calc(var(--sidebar-width) + 2rem);
 }
 
-header .content,
-main,
-.profile,
-.skills,
-.experience {
-    display: flex;
-    flex-direction: column;
-}
+@media screen and (max-width: 750px) {
+    header {
+        position: static;
+        max-width: 100%;
+    }
 
-.experience,
-.profile,
-.skills,
-.skills__list {
-    gap: var(--space-small);
-}
-
-header .content,
-.intro {
-    padding: var(--space-small);
-    gap: var(--space-large);
-}
-
-main {
-    grid-column: 2 / -1;
-    grid-row: 1;
-    max-width: var(--content-max-width);
-    padding: var(--space-large);
-    gap: var(--space-xlarge);
-}
-
-footer {
-    grid-column: 2 / -1;
-    grid-row: 2;
-    align-self: end;
-    padding: var(--space-medium);
-    text-align: center;
+    body {
+        margin-left: 0;
+    }
 }

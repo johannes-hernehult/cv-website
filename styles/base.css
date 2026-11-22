@@ -3,9 +3,7 @@ html {
 }
 
 body {
-    display: grid;
-    grid-template-columns: var(--sidebar-width) minmax(0, 1fr);
-    min-height: 100vh;
+    min-height: var(--viewport-heigth);
     background: var(--gradient-page);
     color: var(--color-text);
     font-family: var(--font-body);
@@ -43,7 +41,8 @@ h4::after {
     opacity: var(--opacity-heading-decoration);
 }
 
-a, button {
+a,
+button {
     color: var(--color-text);
     text-decoration: underline;
     text-decoration-color: var(--color-text-muted);

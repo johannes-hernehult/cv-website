@@ -58,6 +58,12 @@
     );
 }
 
+@media screen and (max-width: 960px) {
+    :root {
+        --sidebar-width: 15rem;
+    }
+}
+
 @supports (height: 100dvh) {
     :root {
         --viewport-height: 100dvh;
