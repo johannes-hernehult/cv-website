@@ -10,15 +10,36 @@ header {
 
 body {
     margin-left: calc(var(--sidebar-width) + 2rem);
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-xlarge);
 }
 
 @media screen and (max-width: 750px) {
     header {
         position: static;
         max-width: 100%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    header .hero {
+        display: flex;
+        align-items: center;
+    }
+
+    header .hero img {
+        flex-basis: 33%;
     }
 
     body {
         margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    header .hero img {
+        flex-basis: 75%;
     }
 }

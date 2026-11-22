@@ -1,0 +1,11 @@
+header .hero img {
+    width: 100%;
+}
+
+header .hero .intro {
+    padding: var(--space-medium);
+}
+
+header .content {
+    padding: var(--space-medium);
+}
