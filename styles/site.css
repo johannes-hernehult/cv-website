@@ -447,3 +447,151 @@ header .links a:hover,
 /* ==========================================================================
    7. Print styles
    ========================================================================== */
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    html,
+    body {
+        min-height: 0;
+        background: #fff;
+        color: #111;
+        font-size: 9pt;
+        line-height: 1.2;
+    }
+
+    body {
+        max-width: none;
+    }
+
+    header {
+        position: absolute;
+        inset: 0 auto auto 0;
+        width: 25%;
+        max-width: none;
+        height: auto;
+        background: #fff;
+    }
+
+    main,
+    footer {
+        margin-left: 25%;
+    }
+
+    main {
+        gap: var(--size-sm);
+        padding: var(--size-sm);
+    }
+
+    footer {
+        padding: var(--size-2xs) var(--size-sm);
+    }
+
+    h1,
+    h2,
+    h3,
+    h4 {
+        margin-bottom: var(--size-2xs);
+    }
+
+    h1::after,
+    h2::after {
+        background: #999;
+    }
+
+    .title,
+    .card,
+    .skills__tags li {
+        background: transparent;
+    }
+
+    .title,
+    .contact {
+        padding: var(--size-sm);
+    }
+
+    .title__name {
+        font-size: var(--size-xl);
+    }
+
+    .title__role,
+    .contact__label,
+    .card__info {
+        color: #444;
+    }
+
+    .card__type {
+        color: #333;
+        opacity: 1;
+    }
+
+    .card {
+        padding: var(--size-xs);
+        border-color: #888;
+        break-inside: avoid;
+        page-break-inside: avoid;
+    }
+
+    .experience {
+        gap: var(--size-xs);
+    }
+
+    .experience__controls {
+        display: none;
+    }
+
+    .experience > h2,
+    .skills > h2 {
+        break-after: avoid;
+        page-break-after: avoid;
+    }
+
+    .experience .card ul {
+        gap: var(--size-3xs);
+    }
+
+    .skills {
+        gap: var(--size-xs);
+    }
+
+    .skills__tags {
+        gap: var(--size-2xs);
+    }
+
+    .skills__tags li {
+        padding: var(--size-3xs) var(--size-2xs);
+        border-color: #aaa;
+    }
+
+    header .links {
+        gap: var(--size-2xs);
+        margin-top: var(--size-xs);
+    }
+
+    header .links a {
+        padding: 0;
+        border: 0;
+        color: inherit;
+        font-size: 0;
+    }
+
+    header .links a::after {
+        content: attr(href);
+        display: block;
+        font-size: 9pt;
+        line-height: 1.25;
+        overflow-wrap: anywhere;
+    }
+
+    .print-button {
+        display: none;
+    }
+
+    main a[href]::after {
+        content: " (" attr(href) ")";
+        font-size: 0.9em;
+        overflow-wrap: anywhere;
+    }
+}
