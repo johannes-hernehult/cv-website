@@ -1,3 +1,7 @@
+body {
+    max-width: calc(840px + var(--sidebar-width));
+}
+
 header {
     position: fixed;
     max-width: var(--sidebar-width);

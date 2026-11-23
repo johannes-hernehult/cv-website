@@ -1,0 +1,13 @@
+header .title__name {
+    font-size: var(--size-3xl);
+    line-height: 1.1;
+}
+
+header .title__role {
+    font-size: var(--size-lg);
+    line-height: 1.1;
+    color: var(--color-text-muted);
+}
+
+header .contact {
+}
