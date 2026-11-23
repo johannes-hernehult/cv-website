@@ -38,9 +38,39 @@ main,
     margin-inline: auto;
 }
 
-.skills,
 .experience {
     display: flex;
     flex-direction: column;
-    gap: var(--size-xl);
+    gap: var(--size-md);
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: var(--size-md);
+}
+
+.skills h2 {
+    grid-column: span 6;
+}
+
+.skills .card {
+    grid-column: span 3;
+}
+
+.skills .skills__tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--size-xs);
+    padding: 0;
+}
+
+.skills .skills__tags li {
+    list-style: none;
+    border: var(--border);
+    padding-block: var(--size-xs);
+    padding-inline: var(--size-sm);
+    border-radius: var(--border-radius-lg);
+    line-height: 1;
+    background-color: var(--color-background-light);
 }

@@ -6,8 +6,17 @@ header .title__name {
 header .title__role {
     font-size: var(--size-lg);
     line-height: 1.1;
-    color: var(--color-text-muted);
+    color: var(--color-text-dark);
 }
 
-header .contact {
+header .contact__label {
+    color: var(--color-text-dark);
+}
+
+header ul.links {
+    padding: 0;
+}
+
+header ul.links li {
+    list-style: none;
 }

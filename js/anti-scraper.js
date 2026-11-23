@@ -14,8 +14,8 @@ function createLink(href, text) {
 }
 
 function showContactDetails() {
-    const locationEl = document.querySelector(".location .contact-info__value");
-    const emailEl = document.querySelector(".email .contact-info__value");
+    const locationEl = document.querySelector(".location .contact__value");
+    const emailEl = document.querySelector(".email .contact__value");
     if (!locationEl || !emailEl) return;
 
     locationEl.textContent = contact.location;

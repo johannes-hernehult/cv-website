@@ -8,7 +8,8 @@
     --color-background-dark: hsla(240, 10%, 6%, 1);
 
     --color-text: hsla(240, 5%, 96%, 1);
-    --color-text-muted: hsla(240, 5%, 96%, 0.5);
+    --color-text-dark: hsla(240, 5%, 66%, 1);
+    --color-text-muted: hsla(240, 5%, 45%, 1);
 
     --color-education-light: hsla(212, 96%, 78%, 1);
     --color-education: hsla(217, 91%, 60%, 1);
@@ -37,8 +38,8 @@
     --size-2xs: 4px;
     --size-xs: 8px;
     --size-sm: 12px;
-    --size-md: 18px;
-    --size-lg: 24px;
+    --size-md: 16px;
+    --size-lg: 22px;
     --size-xl: 30px;
     --size-2xl: 40px;
     --size-3xl: 50px;
@@ -47,7 +48,9 @@
     --border-radius-md: var(--size-xs);
     --border-radius-lg: var(--size-md);
 
-    --border: var(--size-3xs) solid var(--color-background-light);
+    --color-border: hsla(240, 4%, 18%, 1);
+
+    --border: var(--size-3xs) solid var(--color-border);
 
     --sidebar-width: 350px;
 }
