@@ -1,0 +1,39 @@
+:root {
+    --color-accent-light: oklch(87.9% 0.169 91.605);
+    --color-accent: oklch(76.9% 0.188 70.08);
+    --color-accent-dark: oklch(55.5% 0.163 48.998);
+
+    --color-background-light: oklch(27.4% 0.006 286.033);
+    --color-background: oklch(21% 0.006 285.885);
+    --color-background-dark: oklch(14.1% 0.005 285.823);
+
+    --color-text: oklch(96.7% 0.001 286.375);
+    --color-text-muted: oklch(96.7% 0.001 286.375 / 50%);
+
+    --color-education-light: oklch(80.9% 0.105 251.813);
+    --color-education: oklch(62.3% 0.214 259.815);
+    --color-education-dark: oklch(28.2% 0.091 267.935);
+
+    --color-project-light: oklch(89.7% 0.196 126.665);
+    --color-project: oklch(76.8% 0.233 130.85);
+    --color-project-dark: oklch(27.4% 0.072 132.109);
+
+    --color-work-light: oklch(81.1% 0.111 293.571);
+    --color-work: oklch(60.6% 0.25 292.717);
+    --color-work-dark: oklch(28.3% 0.141 291.089);
+
+    --gradient-accent: linear-gradient(
+        to bottom right,
+        var(--color-background-dark),
+        var(--color-background)
+    );
+
+    --gradient-background:;
+}
+
+html {
+    overscroll-behavior: none;
+    background: var(--gradient-accent);
+
+    color: var(--color-text);
+}
