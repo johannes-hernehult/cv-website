@@ -33,11 +33,20 @@
         var(--color-background-dark),
         var(--color-background)
     );
-}
 
-html {
-    overscroll-behavior: none;
-    background: var(--gradient-background);
+    --size-3xs: 2px;
+    --size-2xs: 4px;
+    --size-xs: 8px;
+    --size-sm: 12px;
+    --size-md: 18px;
+    --size-lg: 24px;
+    --size-xl: 30px;
+    --size-2xl: 40px;
+    --size-3xl: 50px;
 
-    color: var(--color-text);
+    --border-radius-sm: var(--size-3xs);
+    --border-radius-md: var(--size-xs);
+    --border-radius-lg: var(--size-md);
+
+    --border: var(--size-3xs) solid var(--color-text-muted);
 }

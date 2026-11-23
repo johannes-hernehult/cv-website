@@ -1,0 +1,6 @@
+html {
+    overscroll-behavior: none;
+    background: var(--gradient-background);
+
+    color: var(--color-text);
+}
