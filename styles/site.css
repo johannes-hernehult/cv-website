@@ -85,17 +85,9 @@ textarea {
     --color-text-dark: hsl(240 5% 66%);
     --color-text-muted: hsl(240 5% 45%);
 
-    --color-education-light: hsl(212 96% 78%);
-    --color-education: hsl(217 91% 60%);
-    --color-education-dark: hsl(226 57% 21%);
-
-    --color-project-light: hsl(82 85% 67%);
-    --color-project: hsl(84 81% 44%);
-    --color-project-dark: hsl(89 80% 10%);
-
-    --color-work-light: hsl(253 95% 85%);
-    --color-work: hsl(258 90% 66%);
-    --color-work-dark: hsl(261 73% 23%);
+    --color-education: hsl(225 75% 60%);
+    --color-project: hsl(100 75% 44%);
+    --color-work: hsl(40 90% 66%);
 
     --color-border: hsl(240 4% 18%);
 
@@ -172,7 +164,7 @@ h2::after {
 }
 
 p {
-    max-width: 75ch;
+    max-width: 80ch;
 }
 
 a:hover {
@@ -240,6 +232,40 @@ footer {
     background-color: var(--color-bg);
     border: var(--border);
     border-radius: var(--radius-md);
+}
+
+.experience .card h3 {
+    margin: 0;
+}
+
+.card__info {
+    color: var(--color-text-dark);
+    margin-bottom: var(--size-sm);
+}
+
+.card__type {
+    position: absolute;
+    right: 0;
+    font-size: var(--size-md);
+    opacity: 0.75;
+}
+
+.card__type--education {
+    color: var(--color-education);
+}
+
+.card__type--work {
+    color: var(--color-work);
+}
+
+.card__type--project {
+    color: var(--color-project);
+}
+
+.experience .card ul {
+    display: flex;
+    flex-direction: column;
+    gap: var(--size-xs);
 }
 
 /* Navigation Links & Buttons */
@@ -314,6 +340,9 @@ header .links a:hover,
    6. Responsive Breakpoints
    ========================================================================== */
 @media screen and (max-width: 900px) {
+    main {
+        padding-top: var(--size-2xl);
+    }
     body,
     header {
         max-width: 100%;
@@ -366,7 +395,6 @@ header .links a:hover,
         gap: var(--size-2xl);
     }
 
-    main,
     .contact,
     .title {
         padding: var(--size-md);
