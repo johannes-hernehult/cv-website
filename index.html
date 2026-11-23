@@ -12,29 +12,11 @@
         <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
         <link rel="apple-touch-icon" href="assets/images/favicon.jpg" />
 
-        <link
-            rel="preload"
-            href="assets/fonts/inter-display/inter-display-custom-400-normal.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-        <link
-            rel="preload"
-            href="assets/fonts/space-grotesk/space-grotesk-custom-400-normal.woff2"
-            as="font"
-            type="font/woff2"
-            crossorigin
-        />
-
         <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="assets/fonts/inter-display/index.css" />
-        <link rel="stylesheet" href="assets/fonts/space-grotesk/index.css" />
         <link rel="stylesheet" href="styles/tokens.css" />
-        <link rel="stylesheet" href="styles/base.css" />
         <link rel="stylesheet" href="styles/layout.css" />
         <link rel="stylesheet" href="styles/header.css" />
-        <link rel="stylesheet" href="styles/print.css" />
+        <link rel="stylesheet" href="styles/main.css" />
 
         <script src="js/experience.js" defer></script>
         <script src="js/anti-scraper.js" defer></script>
@@ -48,22 +30,21 @@
     </head>
     <body>
         <header>
-            <div class="hero">
+            <div class="profile">
                 <img
                     src="./assets/images/jh.jpg"
                     alt="Portrait of Johannes Hernehult"
                     fetchpriority="high"
-                    width="399"
+                    width="300"
                     height="300"
                 />
-                <div class="intro">
-                    <h1 class="intro__name">Johannes Hernehult</h1>
-                    <p class="intro__role">Fullstack Engineer</p>
+                <div class="title">
+                    <span class="title__name">Johannes Hernehult</span>
+                    <p class="title__role">Software Engineer</p>
                 </div>
             </div>
-            <div class="content">
-                <section class="contact card" aria-labelledby="contact-heading">
-                    <h2 id="contact-heading">Contact</h2>
+            <section class="contact">
+                    <h2>Contact</h2>
                     <p class="contact-info location">
                         <span class="contact-info__label">Based in</span>
                         <span class="contact-info__value"></span>
@@ -119,11 +100,11 @@
                 >
                     Print / Save as PDF
                 </button>
-            </div>
+            </section>
         </header>
         <main>
-            <section class="profile" aria-labelledby="profile-heading">
-                <h2 id="profile-heading">Profile</h2>
+            <section class="profile">
+                <h2>Profile</h2>
                 <p>
                     Fullstack developer with 3+ years of agency experience
                     shipping and maintaining 20+ production sites in TypeScript,
@@ -137,8 +118,8 @@
                     and self-host fullstack web apps in SvelteKit and React.
                 </p>
             </section>
-            <section class="skills" aria-labelledby="skills-heading">
-                <h2 id="skills-heading">Skills</h2>
+            <section class="skills" >
+                <h2 >Skills</h2>
                 <div class="skills__list">
                     <div class="card">
                         <h3 class="skills__label">Languages</h3>
@@ -190,14 +171,14 @@
                     </div>
                 </div>
             </section>
-            <section class="experience" aria-labelledby="experience-heading">
-                <h2 id="experience-heading">Experience</h2>
+            <section class="experience">
+                <h2>Experience</h2>
                 <div class="experience__controls" hidden>
                     <label>
                         Order by
                         <select id="experience-order">
-                            <option value="newest">Year (newest first)</option>
-                            <option value="oldest">Year (oldest first)</option>
+                            <option value="newest">Newest first</option>
+                            <option value="oldest">Oldest first</option>
                             <option value="type">Experience type</option>
                         </select>
                     </label>
