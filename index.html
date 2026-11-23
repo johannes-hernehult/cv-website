@@ -12,12 +12,7 @@
         <link rel="icon" type="image/jpeg" href="assets/images/favicon.jpg" />
         <link rel="apple-touch-icon" href="assets/images/favicon.jpg" />
 
-        <link rel="stylesheet" href="styles/reset.css" />
-        <link rel="stylesheet" href="styles/tokens.css" />
-        <link rel="stylesheet" href="styles/base.css" />
-        <link rel="stylesheet" href="styles/layout.css" />
-        <link rel="stylesheet" href="styles/header.css" />
-        <link rel="stylesheet" href="styles/main.css" />
+        <link rel="stylesheet" href="styles/site.css" />
 
         <script src="js/experience.js" defer></script>
         <script src="js/anti-scraper.js" defer></script>
@@ -45,62 +40,63 @@
                 </div>
             </div>
             <section class="contact">
-                    <h2>Contact</h2>
-                    <p class="contact__info location">
-                        <span class="contact__label">Based in</span>
-                        <span class="contact__value"></span>
-                    </p>
+                <h2>Contact</h2>
+                <p class="contact__info location">
+                    <span class="contact__label">Based in</span>
+                    <span class="contact__value"></span>
+                </p>
 
-                    <p class="contact__info email">
-                        <span class="contact__label">Email</span>
-                        <span class="contact__value"></span>
+                <p class="contact__info email">
+                    <span class="contact__label">Email</span>
+                    <span class="contact__value"></span>
+                </p>
+                <noscript>
+                    <p class="contact-fallback">
+                        Enable JavaScript in your browser to see my contact
+                        details, or reach me via LinkedIn below.
                     </p>
-                    <noscript>
-                        <p class="contact-fallback">
-                            Enable JavaScript in your browser to see my contact
-                            details, or reach me via LinkedIn below.
-                        </p>
-                    </noscript>
-                    <ul class="links">
-                        <li>
-                            <a
-                                class="linkedin"
-                                href="https://www.linkedin.com/in/johannes-hernehult/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                LinkedIn
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="git"
-                                href="https://github.com/johannes-hernehult?tab=repositories"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                GitHub
-                            </a>
-                        </li>
-                        <li>
-                            <a
-                                class="git-2"
-                                href="https://git.jhernehult.com/johannes-hernehult?tab=repositories"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                Self-Hosted Git
-                            </a>
-                        </li>
-                    </ul>
-                </section>
-                <button
-                    class="print-button"
-                    type="button"
-                    onclick="window.print()"
-                >
-                    Print / Save as PDF
-                </button>
+                </noscript>
+                <ul class="links">
+                    <li>
+                        <a
+                            class="linkedin"
+                            href="https://www.linkedin.com/in/johannes-hernehult/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="git"
+                            href="https://github.com/johannes-hernehult?tab=repositories"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            class="git-2"
+                            href="https://git.jhernehult.com/johannes-hernehult?tab=repositories"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Self-Hosted Git
+                        </a>
+                    </li>
+                    <li>
+                        <button
+                            class="print-button"
+                            type="button"
+                            onclick="window.print()"
+                        >
+                            Download CV
+                        </button>
+                    </li>
+                </ul>
             </section>
         </header>
         <main>
@@ -119,56 +115,56 @@
                     and self-host fullstack web apps in SvelteKit and React.
                 </p>
             </section>
-            <section class="skills" >
-                <h2 >Skills</h2>
-                    <div class="card">
-                        <h3 class="skills__label">Languages</h3>
-                        <ul class="skills__tags">
-                            <li>TypeScript</li>
-                            <li>JavaScript</li>
-                            <li>C#</li>
-                            <li>SQL</li>
-                            <li>PHP</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3 class="skills__label">Frontend</h3>
-                        <ul class="skills__tags">
-                            <li>SvelteKit</li>
-                            <li>React</li>
-                            <li>HTML</li>
-                            <li>CSS</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3 class="skills__label">Backend & Databases</h3>
-                        <ul class="skills__tags">
-                            <li>Node.js</li>
-                            <li>ASP.NET Core</li>
-                            <li>Entity Framework</li>
-                            <li>SQLite</li>
-                            <li>Drizzle ORM</li>
-                            <li>REST APIs</li>
-                            <li>WordPress</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3 class="skills__label">Cloud & Tooling</h3>
-                        <ul class="skills__tags">
-                            <li>Git</li>
-                            <li>Azure</li>
-                            <li>Linux</li>
-                            <li>Figma</li>
-                        </ul>
-                    </div>
-                    <div class="card">
-                        <h3 class="skills__label">Spoken Languages</h3>
-                        <ul class="skills__tags">
-                            <li>Norwegian (Native)</li>
-                            <li>Swedish (Fluent)</li>
-                            <li>English (Fluent)</li>
-                        </ul>
-                    </div>
+            <section class="skills">
+                <h2>Skills</h2>
+                <div class="card">
+                    <h3 class="skills__label">Languages</h3>
+                    <ul class="skills__tags">
+                        <li>TypeScript</li>
+                        <li>JavaScript</li>
+                        <li>C#</li>
+                        <li>SQL</li>
+                        <li>PHP</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="skills__label">Frontend</h3>
+                    <ul class="skills__tags">
+                        <li>SvelteKit</li>
+                        <li>React</li>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="skills__label">Backend & Databases</h3>
+                    <ul class="skills__tags">
+                        <li>Node.js</li>
+                        <li>ASP.NET Core</li>
+                        <li>Entity Framework</li>
+                        <li>SQLite</li>
+                        <li>Drizzle ORM</li>
+                        <li>REST APIs</li>
+                        <li>WordPress</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="skills__label">Cloud & Tooling</h3>
+                    <ul class="skills__tags">
+                        <li>Git</li>
+                        <li>Azure</li>
+                        <li>Linux</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3 class="skills__label">Spoken Languages</h3>
+                    <ul class="skills__tags">
+                        <li>Norwegian (Native)</li>
+                        <li>Swedish (Fluent)</li>
+                        <li>English (Fluent)</li>
+                    </ul>
+                </div>
             </section>
             <section class="experience">
                 <h2>Experience</h2>
