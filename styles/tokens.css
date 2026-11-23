@@ -23,9 +23,9 @@
     --color-work-dark: oklch(28.3% 0.141 291.089);
 
     --gradient-accent: linear-gradient(
-        to bottom right,
-        var(--color-accent-light),
-        var(--color-accent-dark)
+        to right,
+        var(--color-accent-light) 0%,
+        var(--color-accent-dark) 95%
     );
 
     --gradient-background: linear-gradient(
@@ -49,4 +49,6 @@
     --border-radius-lg: var(--size-md);
 
     --border: var(--size-3xs) solid var(--color-text-muted);
+
+    --sidebar-width: 300px;
 }
