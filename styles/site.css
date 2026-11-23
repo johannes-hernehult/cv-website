@@ -358,8 +358,8 @@ header .links a:hover,
     }
 
     header .profile img {
-        flex-basis: 33%;
-        width: 100%;
+        flex: 0 0 33%;
+        width: 33%;
         object-fit: cover;
     }
 
@@ -413,6 +413,7 @@ header .links a:hover,
 
     header .profile img {
         flex-basis: 40%;
+        width: 40%;
     }
 
     header .profile .title {
