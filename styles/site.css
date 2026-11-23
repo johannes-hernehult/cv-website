@@ -154,7 +154,6 @@ h4 {
     line-height: 1.2;
 }
 
-h1::after,
 h2::after {
     content: "";
     position: absolute;
@@ -214,6 +213,7 @@ footer {
 }
 
 .title__name {
+    margin-bottom: 0;
     font-size: var(--size-3xl);
     line-height: 1.1;
 }
@@ -534,7 +534,6 @@ header .links a:hover,
         margin-bottom: var(--size-2xs);
     }
 
-    h1::after,
     h2::after {
         background: #999;
     }
