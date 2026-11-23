@@ -24,16 +24,20 @@
 
     --gradient-accent: linear-gradient(
         to bottom right,
+        var(--color-accent-light),
+        var(--color-accent-dark)
+    );
+
+    --gradient-background: linear-gradient(
+        to bottom right,
         var(--color-background-dark),
         var(--color-background)
     );
-
-    --gradient-background:;
 }
 
 html {
     overscroll-behavior: none;
-    background: var(--gradient-accent);
+    background: var(--gradient-background);
 
     color: var(--color-text);
 }
