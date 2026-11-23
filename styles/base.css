@@ -38,3 +38,14 @@ h4::after {
 p {
     max-width: 75ch;
 }
+
+.title {
+    background-color: var(--color-background-dark);
+}
+
+.card {
+    background-color: var(--color-background);
+    padding: var(--size-md);
+    border-radius: var(--border-radius-md);
+    border: var(--border);
+}

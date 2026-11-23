@@ -1,27 +1,26 @@
 :root {
-    --color-accent-light: oklch(87.9% 0.169 91.605);
-    --color-accent: oklch(76.9% 0.188 70.08);
-    --color-accent-dark: oklch(55.5% 0.163 48.998);
+    --color-accent-light: hsla(46, 97%, 65%, 1);
+    --color-accent: hsla(38, 92%, 50%, 1);
+    --color-accent-dark: hsla(26, 90%, 37%, 1);
 
-    --color-background-light: oklch(27.4% 0.006 286.033);
-    --color-background: oklch(21% 0.006 285.885);
-    --color-background-dark: oklch(14.1% 0.005 285.823);
+    --color-background-light: hsla(240, 4%, 14%, 1);
+    --color-background: hsla(240, 6%, 10%, 1);
+    --color-background-dark: hsla(240, 10%, 6%, 1);
 
-    --color-text: oklch(96.7% 0.001 286.375);
-    --color-text-muted: oklch(96.7% 0.001 286.375 / 50%);
+    --color-text: hsla(240, 5%, 96%, 1);
+    --color-text-muted: hsla(240, 5%, 96%, 0.5);
 
-    --color-education-light: oklch(80.9% 0.105 251.813);
-    --color-education: oklch(62.3% 0.214 259.815);
-    --color-education-dark: oklch(28.2% 0.091 267.935);
+    --color-education-light: hsla(212, 96%, 78%, 1);
+    --color-education: hsla(217, 91%, 60%, 1);
+    --color-education-dark: hsla(226, 57%, 21%, 1);
 
-    --color-project-light: oklch(89.7% 0.196 126.665);
-    --color-project: oklch(76.8% 0.233 130.85);
-    --color-project-dark: oklch(27.4% 0.072 132.109);
+    --color-project-light: hsla(82, 85%, 67%, 1);
+    --color-project: hsla(84, 81%, 44%, 1);
+    --color-project-dark: hsla(89, 80%, 10%, 1);
 
-    --color-work-light: oklch(81.1% 0.111 293.571);
-    --color-work: oklch(60.6% 0.25 292.717);
-    --color-work-dark: oklch(28.3% 0.141 291.089);
-
+    --color-work-light: hsla(253, 95%, 85%, 1);
+    --color-work: hsla(258, 90%, 66%, 1);
+    --color-work-dark: hsla(261, 73%, 23%, 1);
     --gradient-accent: linear-gradient(
         to right,
         var(--color-accent-light) 0%,
@@ -48,7 +47,7 @@
     --border-radius-md: var(--size-xs);
     --border-radius-lg: var(--size-md);
 
-    --border: var(--size-3xs) solid var(--color-text-muted);
+    --border: var(--size-3xs) solid var(--color-background-light);
 
-    --sidebar-width: 300px;
+    --sidebar-width: 350px;
 }
