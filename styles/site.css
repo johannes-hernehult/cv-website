@@ -176,7 +176,7 @@ p {
 }
 
 a:hover {
-    color: var(--color-accent-light);
+    color: var(--color-accent);
 }
 
 /* ==========================================================================
@@ -273,9 +273,8 @@ header .links a,
 
 header .links a:hover,
 .print-button:hover {
-    background-color: var(--color-accent);
     border-color: var(--color-accent);
-    color: var(--color-bg-dark);
+    color: var(--color-accent);
 }
 
 /* Experience & Skills */
@@ -394,6 +393,11 @@ header .links a:hover,
 
     header .links {
         justify-content: flex-start;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+        gap: var(--size-md);
     }
 }
 
