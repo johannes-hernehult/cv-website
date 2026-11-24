@@ -30,7 +30,6 @@ h4 {
     line-height: 1.2;
 }
 
-h1::after,
 h2::after {
     content: "";
     position: absolute;
@@ -90,6 +89,7 @@ footer {
 }
 
 .title__name {
+    margin-bottom: 0;
     font-size: var(--size-3xl);
     line-height: 1.1;
 }
@@ -102,6 +102,10 @@ footer {
 
 .contact__label {
     color: var(--color-text-dark);
+}
+
+.keyword {
+    color: var(--color-accent);
 }
 
 .card {
@@ -185,6 +189,38 @@ header .links a:hover,
     display: flex;
     flex-direction: column;
     gap: var(--size-md);
+}
+
+.experience__controls:not([hidden]) {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.experience__controls label {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--size-xs);
+    color: var(--color-text-dark);
+}
+
+.experience__controls select {
+    padding: var(--size-2xs) var(--size-sm);
+    background-color: var(--color-bg-dark);
+    border: var(--border);
+    border-radius: var(--radius-md);
+    color: var(--color-text);
+    color-scheme: dark;
+    cursor: pointer;
+}
+
+.experience__controls select:hover,
+.experience__controls select:focus-visible {
+    border-color: var(--color-accent);
+}
+
+.experience__controls select:focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
 }
 
 .skills {
@@ -374,7 +410,6 @@ header .links a:hover,
         margin-bottom: var(--size-2xs);
     }
 
-    h1::after,
     h2::after {
         background: #999;
     }
@@ -396,7 +431,8 @@ header .links a:hover,
 
     .title__role,
     .contact__label,
-    .card__info {
+    .card__info,
+    .keyword {
         color: #444;
     }
 
@@ -416,7 +452,8 @@ header .links a:hover,
         gap: var(--size-xs);
     }
 
-    .experience__controls {
+    .experience__controls,
+    .experience__controls:not([hidden]) {
         display: none;
     }
 
