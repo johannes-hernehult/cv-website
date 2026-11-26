@@ -23,7 +23,8 @@ A static site built with semantic HTML, a single structured vanilla CSS styleshe
 │   └── deploy.yml        # Kamal deployment config
 ├── js/
 │   ├── anti-scraper.js   # Client-side contact detail assembly
-│   └── experience.js     # Experience sorting controls
+│   ├── experience.js     # Experience sorting controls
+│   └── site.js           # Print button and footer year
 ├── styles/
 │   └── site.css          # Tokens, layout, components, responsive & print styles
 ├── .dockerignore
